@@ -54,15 +54,24 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer Anda:
     # Windows
     ```bash
     venv\Scripts\activate
-    ```
-    
+    ``` 
 
 3.  **Install Dependencies**
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Konfigurasi Environment**
+4.  **Buat Database**
+    ```bash
+    CREATE DATABASE todo_db;
+    ```
+
+5. import database
+    ```bash
+    mysql -u root -p todo_db < "your_path/todo_db.sql"
+    ```
+
+6.  **Konfigurasi Environment**
     Buat file `.env` di root folder dan sesuaikan dengan konfigurasi database Anda:
 
     ```env
